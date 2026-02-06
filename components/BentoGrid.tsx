@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 
 const BentoGrid: React.FC = () => {
@@ -46,7 +45,7 @@ const BentoGrid: React.FC = () => {
   const LeftColumnItems = () => (
     <>
       {/* Live Performance Box */}
-      <div className="h-[80px] sm:h-[100px] w-full rounded-2xl sm:rounded-3xl bg-white/5 backdrop-blur-xl glass-edge px-3 sm:px-5 py-2 sm:py-3 bento-card flex items-center justify-between shimmer-effect group cursor-pointer relative overflow-hidden mb-4 sm:mb-6">
+      <div className="h-[80px] sm:h-[100px] w-full rounded-2xl sm:rounded-3xl bg-white/5 backdrop-blur-xl glass-edge px-3 sm:px-5 py-2 sm:py-3 bento-card flex items-center justify-between shimmer-effect group cursor-pointer relative overflow-hidden mb-3 sm:mb-6">
         <div className="relative z-10 w-full flex items-center justify-between">
           <div className="flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-500">
             <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 bg-red-500 rounded-full animate-pulse shadow-[0_0_12px_rgba(239,68,68,1)]"></div>
@@ -69,7 +68,7 @@ const BentoGrid: React.FC = () => {
       </div>
 
       {/* Portrait (Orange) with Parallax */}
-      <div className="h-[200px] sm:h-[280px] w-full rounded-2xl sm:rounded-3xl overflow-hidden bento-card glass-edge relative group cursor-pointer mb-4 sm:mb-6">
+      <div className="h-[180px] sm:h-[280px] w-full rounded-2xl sm:rounded-3xl overflow-hidden bento-card glass-edge relative group cursor-pointer mb-3 sm:mb-6">
         <img 
           src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=600&auto=format&fit=crop" 
           alt="Podcaster" 
@@ -83,7 +82,7 @@ const BentoGrid: React.FC = () => {
       </div>
 
       {/* Avg Watch Time (Yellow Gradient) */}
-      <div className="h-[150px] sm:h-[200px] w-full rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#FACC15] to-[#CA8A04] p-4 sm:p-8 bento-card glass-edge flex flex-col justify-end overflow-hidden group cursor-pointer relative mb-4 sm:mb-6">
+      <div className="h-[140px] sm:h-[200px] w-full rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#FACC15] to-[#CA8A04] p-4 sm:p-8 bento-card glass-edge flex flex-col justify-end overflow-hidden group cursor-pointer relative mb-3 sm:mb-6">
         <div className="text-black relative z-10 transition-transform duration-700 group-hover:translate-y-[-4px]">
           <div className="text-2xl sm:text-4xl font-black leading-none tracking-tighter transition-transform duration-500 group-hover:scale-110 origin-left">Show Page</div>
           <div className="text-lg sm:text-xl font-bold mb-1 italic transition-all duration-500 group-hover:translate-x-1">Watch</div>
@@ -104,7 +103,7 @@ const BentoGrid: React.FC = () => {
   const RightColumnItems = () => (
     <>
       {/* Large Image Portrait with Parallax */}
-      <div className="h-[200px] sm:h-[280px] w-full rounded-2xl sm:rounded-3xl overflow-hidden bento-card glass-edge relative group cursor-pointer mb-4 sm:mb-6">
+      <div className="h-[180px] sm:h-[280px] w-full rounded-2xl sm:rounded-3xl overflow-hidden bento-card glass-edge relative group cursor-pointer mb-3 sm:mb-6">
         <img 
           src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=600&auto=format&fit=crop" 
           alt="Microphone" 
@@ -118,7 +117,7 @@ const BentoGrid: React.FC = () => {
       </div>
 
       {/* About Us (Formerly Growth) */}
-      <div className="h-[150px] sm:h-[200px] w-full rounded-2xl sm:rounded-3xl bg-[#ffffff08] backdrop-blur-xl p-4 sm:p-8 bento-card glass-edge flex flex-col justify-center relative overflow-hidden group cursor-pointer mb-4 sm:mb-6">
+      <div className="h-[140px] sm:h-[200px] w-full rounded-2xl sm:rounded-3xl bg-[#ffffff08] backdrop-blur-xl p-4 sm:p-8 bento-card glass-edge flex flex-col justify-center relative overflow-hidden group cursor-pointer mb-3 sm:mb-6">
         <div className="text-white relative z-10">
           <div className="text-[10px] sm:text-xs font-bold mb-1 tracking-widest uppercase text-white/40 group-hover:text-yellow-400/60 transition-colors duration-500"></div>
           <div className="text-2xl sm:text-4xl font-black leading-none mb-2 tracking-tighter text-yellow-400 group-hover:text-white group-hover:scale-110 origin-left group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] transition-all duration-500">ABOUT US</div>
@@ -134,7 +133,7 @@ const BentoGrid: React.FC = () => {
       </div>
 
       {/* Episode Card (Now Contact Us) */}
-      <div className="h-[80px] sm:h-[120px] w-full rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-2xl glass-edge p-3 sm:p-5 bento-card flex items-center gap-3 sm:gap-4 shimmer-effect group cursor-pointer relative overflow-hidden mb-4 sm:mb-6">
+      <div className="h-[80px] sm:h-[120px] w-full rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-2xl glass-edge p-3 sm:p-5 bento-card flex items-center gap-3 sm:gap-4 shimmer-effect group cursor-pointer relative overflow-hidden mb-3 sm:mb-6">
         <div className="flex items-center justify-between w-full relative z-10">
           <div className="flex-1 min-w-0 transition-transform duration-500 group-hover:translate-x-2">
             <div className="text-black text-sm sm:text-lg font-black leading-tight truncate uppercase tracking-tight group-hover:text-yellow-600 transition-colors duration-500">CONTACT US</div>
@@ -156,8 +155,9 @@ const BentoGrid: React.FC = () => {
   );
 
   return (
-    <div className="relative w-full max-w-[600px] mx-auto lg:ml-auto group/controls">
-      <div className="marquee-container grid grid-cols-2 gap-3 sm:gap-6 h-[450px] sm:h-[650px] w-full overflow-hidden rounded-[30px] sm:rounded-[40px] relative mask-fade-edges px-4 sm:px-10 py-4">
+    <div className="relative w-full max-w-[600px] mx-auto lg:ml-auto group/controls px-2 sm:px-0">
+      {/* Responsive Height: Shorter on mobile (420px) vs desktop (650px) */}
+      <div className="marquee-container grid grid-cols-2 gap-3 sm:gap-6 h-[420px] sm:h-[650px] w-full overflow-hidden rounded-[30px] sm:rounded-[40px] relative mask-fade-edges px-3 sm:px-10 py-4">
         
         {/* COLUMN 1: Wrapper for Entrance (RushUp) -> Inner for Loop (MarqueeUp) */}
         <div className="relative w-full h-full">
