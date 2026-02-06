@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
       <div className="fixed top-0 left-0 w-full z-50 flex justify-center pt-2 sm:pt-4 px-2 sm:px-6 pointer-events-none">
         <nav className={`w-full max-w-7xl transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] pointer-events-auto opacity-0 animate-slide-down ${
           scrolled || mobileMenuOpen 
-            ? 'bg-white/90 backdrop-blur-2xl py-2 sm:py-3 px-3 sm:px-8 rounded-xl sm:rounded-full border border-gray-200/50 shadow-xl' 
-            : 'bg-white/10 backdrop-blur-lg py-3 sm:py-4 px-3 sm:px-10 rounded-xl sm:rounded-full border border-white/20 shadow-sm'
+            ? 'bg-black/70 backdrop-blur-2xl py-2 sm:py-3 px-3 sm:px-8 rounded-xl sm:rounded-full border border-white/10 shadow-2xl' 
+            : 'bg-white/5 backdrop-blur-lg py-3 sm:py-4 px-3 sm:px-10 rounded-xl sm:rounded-full border border-white/10 shadow-sm'
         }`}>
           <div className="flex items-center justify-between gap-2 sm:gap-4">
             
@@ -39,10 +39,10 @@ const Navbar: React.FC = () => {
               </div>
               
               {/* Desktop Navigation Links */}
-              <div className="hidden lg:flex items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-black">
-                <a href="#" className="hover:text-yellow-400 transition-all hover:tracking-[0.3em]">About</a>
-                <a href="#" className="hover:text-yellow-400 transition-all hover:tracking-[0.3em]">Shows</a>
-                <a href="#" className="hover:text-yellow-400 transition-all hover:tracking-[0.3em]">Contact</a>
+              <div className="hidden lg:flex items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/70">
+                <a href="#" className="hover:text-white transition-all hover:tracking-[0.3em]">About</a>
+                <a href="#" className="hover:text-white transition-all hover:tracking-[0.3em]">Shows</a>
+                <a href="#" className="hover:text-white transition-all hover:tracking-[0.3em]">Contact</a>
               </div>
             </div>
 
