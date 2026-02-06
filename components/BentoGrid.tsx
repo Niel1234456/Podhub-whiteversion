@@ -192,23 +192,6 @@ const BentoGrid: React.FC = () => {
         </div>
       </div>
 
-      {/* Manual Controls - Bottom Center, Always Visible */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-row gap-4 z-50 transition-opacity duration-300">
-        <button 
-          onClick={() => toggleDir('up')}
-          className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full backdrop-blur-md flex items-center justify-center border transition-all duration-300 shadow-lg ${scrollDir === 'up' ? 'bg-yellow-400 text-black border-yellow-400 scale-110' : 'bg-black/60 text-white border-white/10 hover:bg-white/10 hover:border-white/40'}`}
-          aria-label="Scroll Up"
-        >
-          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 15l7-7 7 7"/></svg>
-        </button>
-        <button 
-          onClick={() => toggleDir('down')}
-          className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full backdrop-blur-md flex items-center justify-center border transition-all duration-300 shadow-lg ${scrollDir === 'down' ? 'bg-yellow-400 text-black border-yellow-400 scale-110' : 'bg-black/60 text-white border-white/10 hover:bg-white/10 hover:border-white/40'}`}
-          aria-label="Scroll Down"
-        >
-          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-      </div>
     </div>
   );
 };
