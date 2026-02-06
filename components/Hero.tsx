@@ -54,7 +54,6 @@ const Hero: React.FC = () => {
               <span className="text-[8px] sm:text-[10px] font-black uppercase tracking-[0.2em] text-black">Recording</span>
             </div>
 
-
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-black leading-[0.9] lg:leading-[0.85] tracking-tighter drop-shadow-sm flex items-center justify-center lg:justify-start transform scale-95 sm:scale-100 origin-center lg:origin-left">
               <span className="relative inline-flex items-center text-white py-4 lg:py-10 -my-4 lg:-my-10">
                 <span className="animate-scale-p opacity-0 relative z-10 logo-letter text-white">P</span>
